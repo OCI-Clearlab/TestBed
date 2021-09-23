@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-go run action-b/$INPUT_GO_FILE
+go build hello.go
