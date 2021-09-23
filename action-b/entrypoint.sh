@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-go run action-b/hello.go
+go run hello.go
