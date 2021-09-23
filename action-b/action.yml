@@ -1,12 +1,12 @@
 name: "Hello Go Actions"
-description: "Greet someone"
-author: "octocat@github.com"
+description: "Run basic GO script"
+author: "ashley.rosilier2my.utsa.edu"
 
 inputs:
-  MY_NAME:
-    description: "Who to greet"
+  GO_FILE:
+    description: "Script to ru "
     required: true
-    default: "World"
+    default: "hello.go"
 
 runs:
   using: "docker"
