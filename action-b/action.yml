@@ -1,10 +1,10 @@
 name: "Hello Go Actions"
 description: "Run basic GO script"
-author: "ashley.rosilier2my.utsa.edu"
+author: "ashley.rosilier@my.utsa.edu"
 
 inputs:
   GO_FILE:
-    description: "Script to ru "
+    description: "Script to run"
     required: true
     default: "hello.go"
 
