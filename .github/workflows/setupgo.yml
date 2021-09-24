@@ -5,6 +5,7 @@ name: Go workflow
       - .github/workflows/setupgo.yml
       -  action-b/hello.go
       - Makefile
+      - action-b/Dockerfile
       - action-b/build-and-push.sh
 
 
