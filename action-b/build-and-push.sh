@@ -4,7 +4,7 @@ set -eux
 export DOCKER_CLI_EXPERIMENTAL=enabled
 
 VERSION="v1"
-HUB= "docker.io/arosilier"
+HUB="docker.io/arosilier"
 
 
 CONTAINER_CLI=${CONTAINER_CLI:-docker}
