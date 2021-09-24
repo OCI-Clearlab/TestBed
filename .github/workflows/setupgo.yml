@@ -4,6 +4,8 @@ name: Go workflow
     paths:
       - .github/workflows/setupgo.yml
       -  action-b/hello.go
+      - Makefile
+      - action-b/build-and-push.sh
 
 
 
