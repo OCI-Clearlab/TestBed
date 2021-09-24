@@ -1,8 +1,0 @@
-name: "Hello Go Actions"
-description: "Run basic GO script"
-author: "ashley.rosilier@my.utsa.edu"
-
-runs:
-  using: "docker"
-  image: "hello-go"
-
