@@ -14,5 +14,6 @@ clone.go-app:
 
 build.go-app: clean.go-app clone.go-app
 	cd $(ROOT)/TestBed/action-b \
-		&& DRY_RUN=1 CONTAINER_CLI="docker-buildx" CONTAINER_BUILDER="build" ./build-and-push.sh
+		chmod 777 build-and-push.sh \
+			&& DRY_RUN=1 CONTAINER_CLI="docker-buildx" CONTAINER_BUILDER="build" ./build-and-push.sh
     
