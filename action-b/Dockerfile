@@ -1,3 +1,3 @@
 FROM golang:1.16-alpine
-ADD hello 
-ENTRYPOINT ["./hello"]
+COPY hello /usr/local/bin/hello
+ENTRYPOINT ["/usr/local/bin/hello"]
