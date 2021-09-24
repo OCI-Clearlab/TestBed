@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 
 set -eux
-
 export DOCKER_CLI_EXPERIMENTAL=enabled
+
+VERSION="v1"
+HUB = {HUB:- docker.io/arosilier}
+
 
 CONTAINER_CLI=${CONTAINER_CLI:-docker}
 CONTAINER_BUILDER=${CONTAINER_BUILDER:-"buildx build"}
 
-DATE=$(date +%Y-%m-%dT%H-%M-%S)
-BRANCH=master
-VERSION="${BRANCH}-${DATE}"
-SHA="${BRANCH}
+GOOS=linux go build -v -o .
 
 if [[ "$(uname -m)" == "x86_64" ]]; then
   ${CONTAINER_CLI} ${CONTAINER_BUILDER} -t "${HUB}/hello:${VERSION}" --platform linux/amd64 .
