@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-go build hello.go
+GOOS=linux go build -v -o /hello
