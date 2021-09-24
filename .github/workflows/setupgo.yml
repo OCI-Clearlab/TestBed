@@ -2,11 +2,8 @@ name: Go workflow
 "on": 
   push:
     paths:
-      - .github/workflows/setupgo.yml
       -  action-b/hello.go
-      - Makefile
-      - action-b/Dockerfile
-      - action-b/build-and-push.sh
+
 
 
 
