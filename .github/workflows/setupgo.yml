@@ -3,13 +3,18 @@ name: Go workflow
   push:
     paths:
       - .github/workflows/setupgo.yml
+      -  action-b/hello.go
 
 
 
 jobs:
   build:
     name: Setup Go action
-    runs-on: self-hosted
+    runs-on: [ "self-hosted" ]
+    
     steps:
       - uses: actions/checkout@v2
-      - uses: ./action-b
+
+      - name: Build && Push
+        run:
+          docker build -t arosilier/hello:v1 .
